@@ -9,7 +9,8 @@ class Database {
     async runQuery(query) {
         try {
             connection = await mysql.createConnection({
-                host: '127.0.0.1',
+                // host: '127.0.0.1',
+                host: 'localhost:3306',
                 // host: '192.168.2.219',
                 user: 'root',
                 password: 'root',
