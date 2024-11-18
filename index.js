@@ -3,8 +3,8 @@
 const express = require('express')
 const app = express()
 const port = 8080
-// const { Database } = require('./connect')
-const { Database } = require('./local-connect')
+const { Database } = require('./connect')
+// const { Database } = require('./local-connect')
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
