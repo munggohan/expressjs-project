@@ -23,6 +23,7 @@ class Database {
                 if (error) {
                     return "ERROR: query failed."
                 }
+                console.log("running query: ", query);
                 this.queryResult = results;
             });
         } catch (err) {

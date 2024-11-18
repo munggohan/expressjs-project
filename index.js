@@ -23,7 +23,7 @@ app.get('/test', async (req, res) => {
         password: db.queryResult[0].login_password
       }
       res.send(JSON.stringify(result));
-    }, 3000);
+    }, 5000);
 
 
     // let timeoutPromise = new Promise((resolve, reject) => {
