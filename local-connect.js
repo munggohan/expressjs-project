@@ -7,6 +7,7 @@ class Database {
         this.queryResult = null;
     }
     async runQuery(query) {
+        console.log("QUERY: ", query);
         try {
             connection = await mysql.createConnection({
                 // host: '127.0.0.1',
